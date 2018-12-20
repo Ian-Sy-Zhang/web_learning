@@ -3,9 +3,6 @@ import org.dom4j.Document;
 import org.dom4j.DocumentException;
 import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
-
-import javax.swing.text.html.HTMLDocument;
-import javax.xml.transform.sax.SAXResult;
 import java.io.File;
 import java.util.Iterator;
 

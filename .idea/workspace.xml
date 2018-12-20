@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="21e4f4d2-38dd-44e3-be3c-ec0686467970" name="Default Changelist" comment="" />
+    <list default="true" id="21e4f4d2-38dd-44e3-be3c-ec0686467970" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/第3章 XML/2333.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/第3章 XML/js_dom_demo01.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DOMReader/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/DOMReader/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DOMReader/out/production/DOMReader/DOM4JRead.class" beforeDir="false" afterPath="$PROJECT_DIR$/DOMReader/out/production/DOMReader/DOM4JRead.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DOMReader/src/DOM4JRead.java" beforeDir="false" afterPath="$PROJECT_DIR$/DOMReader/src/DOM4JRead.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Learning/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Learning/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/第2章 html和JS/定义子窗口.html" beforeDir="false" afterPath="$PROJECT_DIR$/第2章 html和JS/定义子窗口.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/第2章 html和JS/定义父窗口.html" beforeDir="false" afterPath="$PROJECT_DIR$/第2章 html和JS/定义父窗口.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/第2章 html和JS/确认框.html" beforeDir="false" afterPath="$PROJECT_DIR$/第2章 html和JS/确认框.html" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -16,34 +27,96 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/第2章 html和JS/定义父窗口.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/第2章 html和JS/确认框.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+            <state relative-caret-position="255">
+              <caret line="17" column="15" lean-forward="true" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/第3章 XML/xml_demo_03.xml">
+        <entry file="file://$PROJECT_DIR$/第2章 html和JS/确认框.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="120">
+              <caret line="8" column="44" lean-forward="true" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/第2章 html和JS/2_3_29.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/第2章 html和JS/2_3_28.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/第2章 html和JS/2_3_2_6.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/第2章 html和JS/2_3_2_5.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/第2章 html和JS/2_19.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/第2章 html和JS/定义子窗口.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/第3章 XML/js_dom_demo01.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/第3章 XML/2333.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="3" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/第3章 XML/js_dom_demo02.html" />
+        <option value="$PROJECT_DIR$/第3章 XML/2333.html" />
+        <option value="$PROJECT_DIR$/第3章 XML/js_dom_demo01.html" />
+        <option value="$PROJECT_DIR$/第2章 html和JS/定义父窗口.html" />
+        <option value="$PROJECT_DIR$/第2章 html和JS/定义子窗口.html" />
+        <option value="$PROJECT_DIR$/第2章 html和JS/确认框.html" />
+      </list>
+    </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="20" />
@@ -51,11 +124,15 @@
     <option name="width" value="1400" />
     <option name="height" value="792" />
   </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -66,21 +143,16 @@
             <path>
               <item name="web_learning" type="b2602c69:ProjectViewProjectNode" />
               <item name="web_learning" type="462c0819:PsiDirectoryNode" />
-              <item name="第2章 html和JS" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web_learning" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web_learning" type="462c0819:PsiDirectoryNode" />
               <item name="第3章 XML" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -100,14 +172,9 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="定义父窗口.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/web_learning/第2章 html和JS/定义父窗口.html" useBuiltInWebServerPort="true">
+    <configuration name="定义父窗口.html" type="JavascriptDebugType" nameIsGenerated="true" uri="http://localhost:63342/web_learning/第2章 html和JS/定义父窗口.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JavaScript Debug.定义父窗口.html" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -121,12 +188,14 @@
       <updated>1545318146004</updated>
       <workItem from="1545318148016" duration="396000" />
       <workItem from="1545318555810" duration="156000" />
-      <workItem from="1545318731309" duration="597000" />
+      <workItem from="1545318731309" duration="864000" />
+      <workItem from="1545324488003" duration="22000" />
+      <workItem from="1545324521269" duration="504000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1149000" />
+    <option name="totallyTimeSpent" value="1942000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="20" y="43" width="1400" height="792" extended-state="0" />
@@ -162,13 +231,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/第2章 html和JS/定义父窗口.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/第3章 XML/xml_demo_03.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -176,10 +238,63 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/第3章 XML/js_dom_demo02.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/第2章 html和JS/2_2.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/第2章 html和JS/定义父窗口.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="15" lean-forward="true" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/第2章 html和JS/定义子窗口.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/第2章 html和JS/确认框.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+        <state relative-caret-position="120">
+          <caret line="8" column="44" lean-forward="true" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/第2章 html和JS/2_3_29.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/第2章 html和JS/2_3_28.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/第2章 html和JS/2_3_2_6.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/第2章 html和JS/2_3_2_5.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/第2章 html和JS/2_19.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/第3章 XML/js_dom_demo01.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/第3章 XML/2333.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="3" selection-end-column="24" />
         </state>
       </provider>
     </entry>
