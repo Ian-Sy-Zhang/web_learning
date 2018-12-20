@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>
+            shughdj
+        </title>
+        <script>
+            function returnvalue(){
+                var city = document.myform.city.value;
+                //取出打开该页面的document对象
+                var doc = window.opener.document;
+                //将取得的信息复制给上一个页面上的result文本框
+                doc.parentform.result.value = city;
+                window.close();
+            }
+        </script>
+    </head>
+    <body>
+        <form name="myform">
+            选择：
+            <select name="city">
+                <option value="北京">beijing</option>
+                <option value="上海">shanghai</option>
+                <option value="深圳">shenzhen</option>
+                <option value="扬州">yangzhou</option>
+                <option value="南京">nanjing</option>
+            </select>
+            <input type="button" value="fanhui" onclick="returnvalue();">
+        </form>
+    </body>
+
+</html>

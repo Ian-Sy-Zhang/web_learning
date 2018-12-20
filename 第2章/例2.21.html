@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>
+            shdjksahguia
+        </title>
+        <script>
+            function show(){
+                var name = document.myform.name.value;
+                alert("姓名："+ name);
+
+                var sex;
+                if(document.myform.sex[0].checked){
+                    sex = document.myform.sex[0].value;
+                }else{
+                    sex = document.myform.sex[1].value;
+                }
+                alert("性别："+sex);
+
+                var I = "";//用一个数组来保存数据
+                for(i = 0 ; i < document.myform.inst.length ; i ++){
+                    if(document.myform.inst[i].checked){//判断是否被选中
+                        I += document.myform.inst[i].value+"、";
+                    }
+                }
+                alert("兴趣："+I);
+            }
+        </script>
+    </head>
+    <body>
+        <form action="" method="post" name="myform">
+            姓名:<input type="text" name="name"><br>
+            性别:<input type="radio" name="sex" value="男" checked>男
+            <input type="radio" name="sex" value="woman">女<br>
+            兴趣:<input type="checkbox" name="inst" value="1">1
+            兴趣:<input type="checkbox" name="inst" value="2">2
+            兴趣:<input type="checkbox" name="inst" value="3" checked>3
+            兴趣:<input type="checkbox" name="inst" value="4">4
+            兴趣:<input type="checkbox" name="inst" value="5">5<br>
+
+
+            <input type="button" value="显示" onclick="show()">
+        </form>
+    </body>
+</html>
