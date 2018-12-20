@@ -1,11 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="499def0a-166d-4eb7-8b50-de77d3d088c2" name="Default Changelist" comment="">
+    <list default="true" id="175b27d5-8a35-4dc6-900b-a4626216e6c8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/dom4j_1_6_1.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/DOMDemo03.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chapter3_DOM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Chapter3_DOM/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Chapter3_DOM/src/com/DOMDemo01.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Chapter3_DOM/src/com/DOMDemo01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DOM4JRead.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chaper3_DOM_XMLmaker/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chaper3_DOM_XMLmaker/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chaper3_DOM_XMLmaker/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chaper3_DOM_XMLmaker/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chaper3_DOM_XMLmaker/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chaper3_DOM_XMLmaker/Chaper3_DOM_XMLmaker.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chaper3_DOM_XMLmaker/out/production/Chaper3_DOM_XMLmaker/com/DOMDemo03.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chaper3_DOM_XMLmaker/src/com/DOMDemo03.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chapter3_DOM/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chapter3_DOM/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chapter3_DOM/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chapter3_DOM/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chapter3_DOM/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chapter3_DOM/Chapter3_DOM.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chapter3_DOM/out/production/Chapter3_DOM/com/DOMDemo01.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chapter3_DOM/out/production/Chapter3_DOM/com/dom_demo_02.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chapter3_DOM/src/com/DOMDemo01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Chapter3_DOM/src/com/dom_demo_02.xml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,13 +34,22 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/DOMDemo03.java">
+        <entry file="file://$PROJECT_DIR$/src/DOM4JRead.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="382">
-              <caret line="49" column="9" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
+            <state relative-caret-position="300">
+              <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xml_demo_03.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -43,13 +69,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/DOMDemo03.java" />
+        <option value="$PROJECT_DIR$/src/DOM4JRead.java" />
+        <option value="$PROJECT_DIR$/xml_demo_03.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="height" value="832" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -59,28 +87,37 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="Chaper3_DOM_XMLmaker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Chaper3_DOM_XMLmaker" type="462c0819:PsiDirectoryNode" />
+              <item name="DOMReader" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DOMReader" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DOMReader" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DOMReader" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DOMReader" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545322895469" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545324050338" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
@@ -98,22 +135,16 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="DOMDemo03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.DOMDemo03" />
-      <module name="Chaper3_DOM_XMLmaker" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration name="DOM4JRead" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DOM4JRead" />
+      <module name="DOMReader" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DOMDemo03" />
+        <item itemvalue="Application.DOM4JRead" />
       </list>
     </recent_temporary>
   </component>
@@ -122,20 +153,20 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="499def0a-166d-4eb7-8b50-de77d3d088c2" name="Default Changelist" comment="" />
-      <created>1545321926725</created>
+      <changelist id="175b27d5-8a35-4dc6-900b-a4626216e6c8" name="Default Changelist" comment="" />
+      <created>1545323308194</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1545321926725</updated>
-      <workItem from="1545321929886" duration="963000" />
+      <updated>1545323308194</updated>
+      <workItem from="1545323310929" duration="697000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="963000" />
+    <option name="totallyTimeSpent" value="697000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="832" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Image Layers" />
@@ -153,7 +184,7 @@
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32961586" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32914925" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -173,16 +204,17 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/encodings.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/DOMDemo03.java">
+    <entry file="file://$PROJECT_DIR$/xml_demo_03.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="49" column="9" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
+        <state relative-caret-position="45">
+          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DOM4JRead.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -192,8 +224,33 @@
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
+          <last-edited>junit-jupiter-engine-5.0.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -206,6 +263,18 @@
       <state key="JdkListConfigurable.UI">
         <settings>
           <last-edited>10</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>DOMReader</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -229,6 +298,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>dom4j-1.6.1</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

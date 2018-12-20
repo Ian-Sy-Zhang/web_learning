@@ -50,7 +50,7 @@ public class DOMDemo03 {
         }
         t.setOutputProperty(OutputKeys.ENCODING,"GBK");
         DOMSource source = new DOMSource(doc);
-        StreamResult result = new StreamResult(new File("appti"+File.separator +"output.xml"));
+        StreamResult result = new StreamResult(new File("appti/"+File.separator +"output.xml"));
 
         try {
             t.transform(source,result);
