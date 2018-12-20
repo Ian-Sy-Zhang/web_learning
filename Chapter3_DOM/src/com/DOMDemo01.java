@@ -8,6 +8,10 @@ import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 import java.io.File;
 import java.io.IOException;
+
+
+
+//读取XML文件的内容
 public class DOMDemo01 {
     public static void main(String[] args) {
         //1建立DocumentBuilderFactory，用来取得DocumentBuilder
