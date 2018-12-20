@@ -1,0 +1,14 @@
+<!--头部声明--> 
+<?xml version = "1.0" encoding = "GB2312"?>
+<!--跟节点--> 
+<addresslist>
+    <!--子节点--> 
+    <linkman>
+        <!--具体信息--> 
+        <name>张士煜</name>
+        <id>001</id>
+        <company>是个</company>
+    <!--子节点完结--> 
+    </linkman>
+<!--根节点完结-->    
+</addresslist>

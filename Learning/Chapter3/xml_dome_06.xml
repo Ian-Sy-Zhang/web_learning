@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<author>
+    <name id="MR&apos;LXH">理性化</name>
+    <![CDATA[
+        这里的内容不解析会直接显示
+        可以作为注释出现在一个XML文件中
+        与html中的<!---->功能相类似
+    ]]>
+</author>

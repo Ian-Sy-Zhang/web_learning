@@ -1,0 +1,12 @@
+<?xml version = "1.0" encoding = "UTF-8" standalone= "no" ?>
+<?xml-stytlesheet type = "text/css" herf = "attrib.css"?>
+<addresslist>
+    <linkman>
+        <name>张士煜</name>
+        <id>233</id>
+        <company>555555</company>
+        <email>23478675</email>
+        <tel>13655555</tel>
+        <site>errewt</site>
+    </linkman>
+</addresslist>

@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            fgagra
+        </title>
+        <script language = "JavaScript">
+            function validate(f){
+                var value = f.email.value;
+                if(! /^\w+@\w+.\w+$/.test(value)){
+                    alert("email输入格式错误")
+                    f.email.focus();
+                    f.email.select();
+                    return false;
+                }
+                return true;
+            }
+        </script>
+    </head>
+    <body>
+        <!--表单开始标记，用validate函数进行验证，其中的this表示当前元素，即此表单-->
+        <form action="" method="POST" name="myform" onsubmit="return vaildate(this)">
+            email: <input type="text" name="email">
+            <input type="submit" value="提交 ">
+        </form>
+    </body>
+</html>
