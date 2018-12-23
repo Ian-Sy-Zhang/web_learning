@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75c9a3fc-5bca-4261-a2fb-98f678705d01" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../DOMReader/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../DOMReader/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DOMReader/out/production/DOMReader/DOM4JRead.class" beforeDir="false" afterPath="$PROJECT_DIR$/../DOMReader/out/production/DOMReader/DOM4JRead.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../DOMReader/src/DOM4JRead.java" beforeDir="false" afterPath="$PROJECT_DIR$/../DOMReader/src/DOM4JRead.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter2/2_3_1.html" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter2/2_3_1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter2/hello.js" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter2/hello.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chapter2/打开新的页面.html" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter2/打开新的页面.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chapter3/js_dom_demo01.html" beforeDir="false" afterPath="$PROJECT_DIR$/Chapter3/js_dom_demo01.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,76 +18,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Chapter3/js_dom_demo01.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+            <state relative-caret-position="120">
+              <caret line="8" column="36" lean-forward="true" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Chapter3/2333.html">
+        <entry file="file://$PROJECT_DIR$/Chapter3/js_dom_demo02.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter2/hello.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="15" selection-start-column="15" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter2/2_2.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter2/2_2_3.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter2/2_3_1.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter2/2_3_2_5.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter3/attrib.css">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chapter2/打开新的页面.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="10" lean-forward="true" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+            <state relative-caret-position="150">
+              <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -113,6 +48,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="XSLT Stylesheet" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -144,6 +80,8 @@
         <option value="$PROJECT_DIR$/Chapter2/打开新的页面.html" />
         <option value="$PROJECT_DIR$/Chapter2/hello.js" />
         <option value="$PROJECT_DIR$/Chapter2/2_3_1.html" />
+        <option value="$PROJECT_DIR$/Chapter3/js_dom_demo01.html" />
+        <option value="$PROJECT_DIR$/Chapter3/js_dom_demo02.html" />
       </list>
     </option>
   </component>
@@ -181,6 +119,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -202,7 +141,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.2333.html">
+  <component name="RunManager" selected="JavaScript Debug.打开新的页面.html">
     <configuration name="2333.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Learning/Chapter3/2333.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
@@ -238,16 +177,17 @@
       <workItem from="1545358787089" duration="1091000" />
       <workItem from="1545378431238" duration="357000" />
       <workItem from="1545380041352" duration="169000" />
+      <workItem from="1545576506547" duration="174000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3674000" />
+    <option name="totallyTimeSpent" value="3848000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="40" y="63" width="1400" height="792" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24945612" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24945612" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -392,10 +332,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter3/js_dom_demo01.html">
+    <entry file="file://$PROJECT_DIR$/Chapter3/2333.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+        <state relative-caret-position="180">
+          <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -444,6 +384,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Chapter3/js_dom_demo01.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="36" lean-forward="true" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Chapter3/xml_demo_03.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -451,10 +398,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chapter3/2333.html">
+    <entry file="file://$PROJECT_DIR$/Chapter3/js_dom_demo02.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
+        <state relative-caret-position="150">
+          <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
         </state>
       </provider>
     </entry>
