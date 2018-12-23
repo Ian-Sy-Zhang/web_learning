@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>
+            shkgdjlsjg
+        </title>
+        <script>
+            function setFun(){
+                var id = new Array(1,2,3);
+                var value = new Array("北京","南京","上海");
+                //通过DOM取得下拉列表框元素
+                var select = document.getElementById("area");
+                select.length = 1;
+                select.options[0].selected = true;
+                for(var x=0;x<id.length;x++){
+                    var option = document.createElement("option");
+                    //设置属性值
+                    option.setAttribute("value",id[x]);
+                    option.appendChild(document.createTextNode(value[x]));
+                    select.appendChild(option);
+                }
+            }
+        </script>
+    </head>
+    <body onload="setFun()">
+        <form>
+            <select name="area" id="area">
+                <option value="0">没有地区</option>
+            </select>
+        </form>
+
+    </body>
+</html>

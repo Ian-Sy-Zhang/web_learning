@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>
+            sjdkghkjhsdgkj
+        </title>
+        <script>
+            var count = 3;
+            function addrow(){
+                var table = document.getElementById("mytable");
+                var tr = table.insertRow();
+                var td1 = table.tr.insertCell();
+                var td2 = table.tr.insertCell();
+                var td3 = table.tr.insertCell();
+                td1.innerHTML = "sjhgjkd" + count;
+                td2.innerHTML = "sjfhdkjhgk" + count;
+                td3.innerHTML = "<input type = 'button' value = '-' onclick = 'deleterow(this);'>";
+                count++;
+            }
+            function deleterow(btn){
+                var te = btn.parentNode.parentNode;
+                var table = document.getElementById("mytable");
+                table.deleterow(tr.rowIndex);
+            }
+        </script>
+    
+    </head>
+    <body>
+        <input type="button" value="+" onclick="addrow();">
+        <table id="mytable" border="1">
+            <tr>
+                <td>
+                    sjhgjkd
+                </td>
+                <td>
+                    sjfhdkjhgk
+                </td>
+                <td>
+                    <input type="button" value="-" onclick="deleterow(this);">
+                </td>
+            </tr>
+            <tr>
+                    <td>
+                            sjhgjkd-
+                        </td>
+                        <td>
+                            sjfhdkjhgk-
+                        </td>
+                        <td>
+                            <input type="button" value="-" onclick="deleterow(this);">
+                        </td>
+            </tr>
+        </table>
+    </body>
+</html>
