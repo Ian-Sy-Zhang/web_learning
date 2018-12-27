@@ -1,9 +1,0 @@
-/**
- * 
- */
-/**
- * @author appti
- *
- */
-module JdbcDemo {
-}
