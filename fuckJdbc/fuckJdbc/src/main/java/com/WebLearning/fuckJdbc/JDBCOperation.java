@@ -1,7 +1,9 @@
 package com.WebLearning.fuckJdbc;
 
 
+import javax.rmi.CORBA.StubDelegate;
 import java.sql.*;
+import java.util.Calendar;
 
 public class JDBCOperation {
 
@@ -33,7 +35,7 @@ public class JDBCOperation {
             pstmt.setString(2, student.getName());
             pstmt.setInt(3, student.getTimes());
             i = pstmt.executeUpdate();
-            System.out.println("改变了 " + i + "同学的信息");
+            System.out.println("插入了 " + i + "同学的信息");
             pstmt.close();
             conn.close();
         } catch (SQLException e) {
@@ -45,11 +47,23 @@ public class JDBCOperation {
     private static int update(TKDstudent student) {
         Connection conn = getConn();
         int i = 0;
-        String sql = "update students set times='" + student.getTimes() + "' where id='" + student.getId() + "'";
+        String today = getDate();
+        String updateData = student.getTimes() + "、"+today;
+        /*
+        StringBuilder stringBuilder = new StringBuilder();
+        stringBuilder.append("update students set times=");
+        stringBuilder.append(student.getTimes()+1);
+        stringBuilder.append("where id=");
+        */
+        String sql = "update students set times= ? , date = ? where id= ? ";
         PreparedStatement pstmt;
         try {
             pstmt = conn.prepareStatement(sql);
+            pstmt.setInt(1,student.getTimes());
+            pstmt.setString(2,updateData);
+            pstmt.setString(3,student.getId());
             i = pstmt.executeUpdate();
+
             System.out.println("改变了 " + i + "同学的信息");
             pstmt.close();
             conn.close();
@@ -92,7 +106,7 @@ public class JDBCOperation {
         try {
             pstmt = (PreparedStatement) conn.prepareStatement(sql);
             i = pstmt.executeUpdate();
-            System.out.println("改变了 " + i + "同学的信息");
+            System.out.println("删除了 " + i + "同学的信息");
             pstmt.close();
             conn.close();
         } catch (SQLException e) {
@@ -101,86 +115,22 @@ public class JDBCOperation {
         return i;
     }
 
+    static private String getDate(){
+        String y,m,d;
+        Calendar cal=Calendar.getInstance();
+        y=String.valueOf(cal.get(Calendar.YEAR));
+        m=String.valueOf(cal.get(Calendar.MONTH));
+        d=String.valueOf(cal.get(Calendar.DATE));
+        return y + m + d;
+    }
+
+
+
     public static void main(String args[]) {
-        JDBCOperation.insert(new TKDstudent("111", "Male", 14));
-        JDBCOperation.update(new TKDstudent("111", "Ian", 12));
+        TKDstudent tdKstudent1 = new TKDstudent("12", "Ma", 1);
+        JDBCOperation.update(tdKstudent1);
+        JDBCOperation.getConn();
     }
 
 
-    /*
-
-    // JDBC 驱动名及数据库 URL
-    static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
-    static final String DB_URL = "jdbc:mysql://localhost:3306/bunoob"+"?useUnicode=true&characterEncoding=utf-8&useSSL=false";
-
-    // 数据库的用户名与密码，需要根据自己的设置
-    static final String USER = "root";
-    static final String PASS = "zsy999666.";
-
-    public static void main(String[] args) {
-
-        String currentTable = "new_table";
-
-        Connection conn = null;
-        Statement stmt = null;
-        try{
-            // 注册 JDBC 驱动
-            Class.forName("com.mysql.cj.jdbc.Driver");
-
-            // 打开链接
-            System.out.println("连接数据库...");
-            conn = DriverManager.getConnection(DB_URL,USER,PASS);
-
-            // 执行查询
-            System.out.println(" 实例化Statement对象...");
-            stmt = conn.createStatement();
-            String sql;
-            //这里是在mysql终端执行具体的命令
-            sql = "INSERT INTO new_table (id,name,times) VALUES (111,Ian,20)";
-            if (stmt.execute(sql)){
-                System.out.println("操作成功");
-            }
-
-            //sql = "SELECT id, name , times FROM new_table";
-            /*
-            ResultSet rs = stmt.executeQuery(sql);
-
-            // 展开结果集数据库
-            while(rs.next()){
-                // 通过字段检索
-                int id  = rs.getInt("id");
-                String name = rs.getString("name");
-
-                // 输出数据
-                System.out.print("ID: " + id);
-                System.out.print("，名称: " + name);
-                System.out.print("\n");
-            }
-
-            // 完成后关闭
-            rs.close();
-
-            stmt.close();
-            conn.close();
-        }catch(SQLException se){
-            // 处理 JDBC 错误
-            se.printStackTrace();
-        }catch(Exception e){
-            // 处理 Class.forName 错误
-            e.printStackTrace();
-        }finally{
-            // 关闭资源
-            try{
-                if(stmt!=null) stmt.close();
-            }catch(SQLException se2){
-            }// 什么都不做
-            try{
-                if(conn!=null) conn.close();
-            }catch(SQLException se){
-                se.printStackTrace();
-            }
-        }
-        System.out.println("Goodbye!");
-    }
-    */
 }
