@@ -14,7 +14,7 @@
             登陆成功
         </h2>
         <h2>
-            欢迎<font color="#663399"></font>
+            训练次数是<font color="red"><%= request.getParameter("utimes")%></font>
         </h2>
     </center>
 
