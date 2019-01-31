@@ -1,7 +1,6 @@
 package com.WebLearning.fuckJdbc;
 
 
-import javax.rmi.CORBA.StubDelegate;
 import java.sql.*;
 import java.util.Calendar;
 
@@ -15,7 +14,7 @@ public class JDBCOperation {
         Connection conn = null;
         try {
             Class.forName(driver); //classLoader,加载对应驱动
-            conn = (Connection) DriverManager.getConnection(url, username, password);
+            conn = DriverManager.getConnection(url, username, password);
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         } catch (SQLException e) {
@@ -49,12 +48,6 @@ public class JDBCOperation {
         int i = 0;
         String today = getDate();
         String updateData = student.getTimes() + "、"+today;
-        /*
-        StringBuilder stringBuilder = new StringBuilder();
-        stringBuilder.append("update students set times=");
-        stringBuilder.append(student.getTimes()+1);
-        stringBuilder.append("where id=");
-        */
         String sql = "update students set times= ? , date = ? where id= ? ";
         PreparedStatement pstmt;
         try {
@@ -98,6 +91,49 @@ public class JDBCOperation {
         return null;
     }
 
+    public static int login(String name, String id) {
+        Connection conn = getConn();
+        String sql = "select * from students where name=? and id = ?";
+        PreparedStatement pstmt = null;
+        try {
+            pstmt = conn.prepareStatement(sql);
+            pstmt.setString(1,name);
+            pstmt.setString(2,id);
+            ResultSet i = pstmt.executeQuery();
+            int count= -1;
+            if (i.next()) {
+                count = i.getInt(1);
+            }
+            /*
+            if (count > 0 ) {
+            	//登陆成功
+            }
+            else {
+				//登陆失败
+			}
+			*/
+            return count;
+        }
+        catch (SQLException e) {
+            e.printStackTrace();
+        }
+        finally {
+            try {
+                pstmt.close();
+            } catch (SQLException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+            try {
+                conn.close();
+            } catch (SQLException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+        }
+        return -1;
+    }
+
     private static int delete(String id) {
         Connection conn = getConn();
         int i = 0;
@@ -127,9 +163,7 @@ public class JDBCOperation {
 
 
     public static void main(String args[]) {
-        TKDstudent tdKstudent1 = new TKDstudent("12", "Ma", 1);
-        JDBCOperation.update(tdKstudent1);
-        JDBCOperation.getConn();
+        System.out.println(JDBCOperation.login("ma","12"));
     }
 
 
