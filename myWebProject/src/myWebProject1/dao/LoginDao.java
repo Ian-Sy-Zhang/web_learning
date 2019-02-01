@@ -1,4 +1,4 @@
-package myWebProject1;
+package myWebProject1.dao;
 
 import java.sql.*;
 public class LoginDao {
@@ -29,7 +29,7 @@ public class LoginDao {
             pstmt.setString(1,name);
             pstmt.setString(2,id);
             ResultSet i = pstmt.executeQuery();
-            int count= -1;
+            int count= 0;
             if (i.next()) {
             	count = i.getInt(1);
             }

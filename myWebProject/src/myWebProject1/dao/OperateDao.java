@@ -1,12 +1,12 @@
-package com.WebLearning.fuckJdbc;
-
+package myWebProject1.dao;
 
 import java.sql.*;
 import java.util.Calendar;
 
-public class JDBCOperation {
+public class OperateDao {
 
-    private static Connection getConn() {
+	//建立与数据库的链接
+    public static Connection getConn() {
         String driver = "com.mysql.cj.jdbc.Driver";
         String url = "jdbc:mysql://localhost:3306/bunoob"+"?useUnicode=true&characterEncoding=utf-8&useSSL=false";
         String username = "root";
@@ -23,7 +23,8 @@ public class JDBCOperation {
         return conn;
     }
 
-    private static int insert(TKDstudent student) {
+    //增加新学员
+    public static int insert(TKDstudent student) {
         Connection conn = getConn();
         int i = 0;
         String sql = "insert into students (id,name,times) values(?,?,?)";
@@ -43,7 +44,8 @@ public class JDBCOperation {
         return i;
     }
 
-    private static int update(TKDstudent student) {
+    //更新学员的状态
+    public static int update(TKDstudent student) {
         Connection conn = getConn();
         int i = 0;
         String today = getDate();
@@ -66,7 +68,8 @@ public class JDBCOperation {
         return i;
     }
 
-    private static Integer getAll() {
+    //打印出所有的成员
+    public static Integer getAll() {
         Connection conn = getConn();
         String sql = "select * from students";
         PreparedStatement pstmt;
@@ -89,6 +92,24 @@ public class JDBCOperation {
             e.printStackTrace();
         }
         return null;
+    }
+
+    //删除学员
+    public static int delete(String id) {
+        Connection conn = getConn();
+        int i = 0;
+        String sql = "delete from students where id='" + id + "'";
+        PreparedStatement pstmt;
+        try {
+            pstmt = (PreparedStatement) conn.prepareStatement(sql);
+            i = pstmt.executeUpdate();
+            System.out.println("删除了 " + i + "同学的信息");
+            pstmt.close();
+            conn.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return i;
     }
 
     public static int login(String name, String id) {
@@ -133,24 +154,7 @@ public class JDBCOperation {
         }
         return -1;
     }
-
-    private static int delete(String id) {
-        Connection conn = getConn();
-        int i = 0;
-        String sql = "delete from students where id='" + id + "'";
-        PreparedStatement pstmt;
-        try {
-            pstmt = (PreparedStatement) conn.prepareStatement(sql);
-            i = pstmt.executeUpdate();
-            System.out.println("删除了 " + i + "同学的信息");
-            pstmt.close();
-            conn.close();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        return i;
-    }
-
+    
     static private String getDate(){
         String y,m,d;
         Calendar cal=Calendar.getInstance();
@@ -159,12 +163,5 @@ public class JDBCOperation {
         d=String.valueOf(cal.get(Calendar.DATE));
         return y + m + d;
     }
-
-
-
-    public static void main(String args[]) {
-        System.out.println(JDBCOperation.login("ma","121"));
-    }
-
 
 }

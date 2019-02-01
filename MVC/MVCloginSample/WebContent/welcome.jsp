@@ -7,10 +7,13 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="check.jsp" method="post">
-	name：<input type="text" name="uname"/><br/>
-	id  ：<input type="text" name="upwd"/><br/>
-	<input type="submit" value="登陆" /><br/>
-	</form>
+	登陆成功！
+	当前用户
+	
+	
+	//如何获取当前的用户信息？
+	
+	
+	
 </body>
 </html>

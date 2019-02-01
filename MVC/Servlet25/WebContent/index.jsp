@@ -7,10 +7,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="check.jsp" method="post">
-	name：<input type="text" name="uname"/><br/>
-	id  ：<input type="text" name="upwd"/><br/>
-	<input type="submit" value="登陆" /><br/>
+	<a href="WelcomeServlet2">welcomeservlet</a>
+	<form action="WelcomeServlet2" method="post">
+		<input type = "submit">
 	</form>
 </body>
 </html>
