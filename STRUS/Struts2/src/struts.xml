@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+配置action类访问路径
+
+1.创建struts核心配置文件
+ 核心配置文件名称和位置是固定的
+ 位置必须在src下面，名称struts.xml
+ 
+2.引入dtd的约束
+
+ -->
+ 
+ <!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+	<package name="demo1" extends="struts-default" namespace="/">
+	
+		<!-- 全局结果页面配置 -->
+		<global-results>
+			<result name = "success">/hello.jsp</result>
+		</global-results>
+		
+		<action name = "book" class="cn.itcast.BookAction">
+			<!-- 这边可以直接写action的名称 -->
+			<result name = "success" type="redirectAction">orders</result>
+		</action>
+		<action name = "orders" class="cn.itcast.OrderAction">
+			<!-- <result name = "success">/hello.jsp</result> -->
+		</action>
+	</package>
+	
+	
+	
+	<!-- 获取表单提交的数据 -->
+	<package name="demo2" extends="struts-default" namespace="/">
+		<action name ="form1" class="cn.itcast.form.Form1DemoAction"></action>
+		<action name = "form2" class="cn.itcast.form.Form2DemoAction"></action>
+	</package>
+	
+</struts>
