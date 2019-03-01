@@ -9,6 +9,14 @@ public class Student {
 	public Student() {
 	}
 	
+	public Student(String id, String name, int times, String date) {
+		super();
+		this.id = id;
+		Name = name;
+		this.times = times;
+		this.date = date;
+	}
+
 	public Student(String id, String Name, int times) {
 		this.id = id;
 		this.Name = Name;

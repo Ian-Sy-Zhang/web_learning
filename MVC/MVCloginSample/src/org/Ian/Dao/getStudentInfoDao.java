@@ -5,10 +5,9 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-
 import org.Ian.entity.Student;
 
-public class CheckTimes {
+public class getStudentInfoDao {
 	private static Connection getConn() {
 		String driver = "com.mysql.cj.jdbc.Driver";
 		String url = "jdbc:mysql://localhost:3306/bunoob" + "?useUnicode=true&characterEncoding=utf-8&useSSL=false";
@@ -26,11 +25,11 @@ public class CheckTimes {
 		return conn;
 	}
 	
-	public static int checktimes(Student student) {
+	public static Student getinfo(String ID) {
 		Connection connection = getConn();
 		PreparedStatement pstmt = null;
     	ResultSet rs = null;
-    	String ID = student.getId();
+    	
     	String sql = "select * from students where id = ?";
     	try {
     		pstmt = connection.prepareStatement(sql);
@@ -38,7 +37,10 @@ public class CheckTimes {
 			rs = pstmt.executeQuery();
 			if (rs.next()) {
 				int times = rs.getInt("times");
-				return times;
+				String name = rs.getString("name");
+				String date = rs.getString("date");
+				Student student = new Student(ID,name,times,date);
+				return student;
 			}
 		} catch (SQLException e1) {
 			// TODO Auto-generated catch block
@@ -54,7 +56,9 @@ public class CheckTimes {
 				}
 
 		}
-    	return 999;
+    	Student failStudent = new Student();
+    	failStudent.setTimes(999);
+    	return failStudent;
 	}
 }
 

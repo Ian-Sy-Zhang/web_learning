@@ -5,6 +5,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import org.Ian.Dao.LoginDao;
 import org.Ian.entity.Student;
@@ -20,6 +21,12 @@ public class LoginServlet extends HttpServlet {
 		request.setCharacterEncoding("utf-8");
 		String name = request.getParameter("uname");
 		String id = request.getParameter("uid");
+		
+		//将ID 信息存储到session之中
+		HttpSession session = request.getSession();
+		//将用户的ID信息存储进session之中
+		session.setAttribute("ID", id);
+		
 		//拿到名字和密码之后组装成一个JavaBean
 		Student student = new Student();
 		student.setName(name);

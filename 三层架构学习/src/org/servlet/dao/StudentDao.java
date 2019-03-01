@@ -1,11 +1,13 @@
-package com.WebLearning.fuckJdbc;
-
-
+package org.servlet.dao;
 import java.sql.*;
-import java.util.Calendar;
 
-public class JDBCOperation {
+import org.servlet.entity.Student;
 
+
+
+//数据访问层：原子性的增删改查
+public class StudentDao {
+	
     private static Connection getConn() {
         String driver = "com.mysql.cj.jdbc.Driver";
         String url = "jdbc:mysql://localhost:3306/bunoob"+"?useUnicode=true&characterEncoding=utf-8&useSSL=false";
@@ -22,57 +24,45 @@ public class JDBCOperation {
         }
         return conn;
     }
-
-    private static int insert(TKDstudent student) {
+	
+    public  int insert(Student student) {
         Connection conn = getConn();
         int i = 0;
-        String sql = "insert into students (id,name,times) values(?,?,?)";
-        PreparedStatement pstmt;
+        String sql = "insert into Student (id,name,age,address) values(?,?,?,?)";
+        PreparedStatement pstmt = null;
         try {
-            pstmt = (PreparedStatement) conn.prepareStatement(sql);
-            pstmt.setString(1, student.getId());
+            pstmt = conn.prepareStatement(sql);
+            pstmt.setString(1, student.getID());
             pstmt.setString(2, student.getName());
-            pstmt.setInt(3, student.getTimes());
+            pstmt.setInt(3, student.getAge());
+            pstmt.setString(4, student.getAddressString());
             i = pstmt.executeUpdate();
             System.out.println("插入了 " + i + "同学的信息");
             pstmt.close();
             conn.close();
         } catch (SQLException e) {
             e.printStackTrace();
-        }
+        }finally {
+			try {
+				if(pstmt != null) pstmt.close();
+				if(conn != null ) conn.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+
+	}
         return i;
     }
 
-    private static int update(TKDstudent student) {
+    public static Integer getAll() {
         Connection conn = getConn();
-        int i = 0;
-        String today = getDate();
-        String updateData = student.getTimes() + "、"+today;
-        String sql = "update students set times= ? , date = ? where id= ? ";
-        PreparedStatement pstmt;
+        String sql = "select * from Student";
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
         try {
             pstmt = conn.prepareStatement(sql);
-            pstmt.setInt(1,student.getTimes());
-            pstmt.setString(2,updateData);
-            pstmt.setString(3,student.getId());
-            i = pstmt.executeUpdate();
-
-            System.out.println("改变了 " + i + "同学的信息");
-            pstmt.close();
-            conn.close();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        return i;
-    }
-
-    private static Integer getAll() {
-        Connection conn = getConn();
-        String sql = "select * from students";
-        PreparedStatement pstmt;
-        try {
-            pstmt = conn.prepareStatement(sql);
-            ResultSet rs = pstmt.executeQuery();
+            rs = pstmt.executeQuery();
             int col = rs.getMetaData().getColumnCount();
             System.out.println("============================");
             while (rs.next()) {
@@ -87,18 +77,28 @@ public class JDBCOperation {
             System.out.println("============================");
         } catch (SQLException e) {
             e.printStackTrace();
-        }
+        }finally {
+			try {
+				if(rs != null)rs.close();
+				if(pstmt != null) pstmt.close();
+				if(conn != null ) conn.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+
+	}
         return null;
     }
 
     public static int login(String name, String id) {
         Connection conn = getConn();
-        String sql = "select * from students where name=? and id = ?";
+        String sql = "select * from Student where id=? and name = ?";
         PreparedStatement pstmt = null;
         try {
             pstmt = conn.prepareStatement(sql);
-            pstmt.setString(1,name);
-            pstmt.setString(2,id);
+            pstmt.setString(1,id);
+            pstmt.setString(2,name);
             ResultSet i = pstmt.executeQuery();
             int count= 0;
             if (i.next()) {
@@ -134,11 +134,11 @@ public class JDBCOperation {
         return -1;
     }
 
-    private static int delete(String id) {
+    public  int delete(String id) {
         Connection conn = getConn();
         int i = 0;
-        String sql = "delete from students where id='" + id + "'";
-        PreparedStatement pstmt;
+        String sql = "delete from Student where id='" + id + "'";
+        PreparedStatement pstmt = null;
         try {
             pstmt = (PreparedStatement) conn.prepareStatement(sql);
             i = pstmt.executeUpdate();
@@ -147,24 +147,74 @@ public class JDBCOperation {
             conn.close();
         } catch (SQLException e) {
             e.printStackTrace();
-        }
+        }finally {
+			try {
+				if(pstmt != null) pstmt.close();
+				if(conn != null ) conn.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+
+	}
         return i;
     }
+    
+    //查询学生的具体信息
+    public  Student check(String ID) {
+    	PreparedStatement pstmt = null;
+    	ResultSet rs = null;
+    	Connection connection = getConn();
+    	String sql = "select * from Student where ID =?";
+    	try {
+    		pstmt = connection.prepareStatement(sql);
+			pstmt.setString(1, ID);
+			rs = pstmt.executeQuery();
+			if (rs.next()) {
+				String name = rs.getString("name");
+				int age = rs.getInt("age");
+				String address = rs.getString("address");
+				Student student = new Student(ID, name, age, address);
+				return student;
+			}
+		} catch (SQLException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}finally {
+				try {
+					if(rs != null)rs.close();
+					if(pstmt != null) pstmt.close();
+					if(connection != null ) connection.close();
+				} catch (SQLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
 
-    static private String getDate(){
-        String y,m,d;
-        Calendar cal=Calendar.getInstance();
-        y=String.valueOf(cal.get(Calendar.YEAR));
-        m=String.valueOf(cal.get(Calendar.MONTH));
-        d=String.valueOf(cal.get(Calendar.DATE));
-        return y + m + d;
+		}
+		return null;
+    	
+}
+
+    
+    //查询学生是否存在于数据库中，区别于check方法
+    public  boolean IsExsit(String ID) {
+    	PreparedStatement pstmt = null;
+    	ResultSet rs = null;
+    	Connection connection = getConn();
+    	String sql = "select * from Student where ID =?";
+    	try {
+    		pstmt = connection.prepareStatement(sql);
+			pstmt.setString(1, ID);
+			rs = pstmt.executeQuery();
+			if (rs.next()) {
+				return true;
+			}
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+    	return false;
     }
-
-
-
-    public static void main(String args[]) {
-        System.out.println(JDBCOperation.getAll());
-    }
-
-
+    
+    
 }

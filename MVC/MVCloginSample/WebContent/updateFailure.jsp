@@ -7,11 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	签到成功！<br/>
-	您已经签到成功
-	<% int times = (int)session.getAttribute("trainingTimes"); %>
-	<%= times %>
-	次！
-	<a href = "welcome.jsp">点我返回首页</a>
+	签到失败！
 </body>
 </html>

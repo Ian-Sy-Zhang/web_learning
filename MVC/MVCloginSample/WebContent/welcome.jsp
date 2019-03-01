@@ -4,14 +4,22 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>登陆成功</title>
 </head>
 <body>
 	登陆成功！
-	当前用户
-	
-	
-	//如何获取当前的用户信息？
+	<br/>
+	<h2>
+	欢迎同学
+	<%
+		String userId = (String)session.getAttribute("ID");
+	%>
+	<%=userId %>
+	</h2>
+	<br/>
+	<form action="Update" method="post">
+		<input type="submit" value="签到">
+	</form>
 	
 	
 	
